@@ -1,0 +1,11 @@
+<h1>Hello Friend</h1>
+
+<div *ngFor="let movie of movies; let index - index">
+    <div>
+        {{index}}
+        {{movie.title | uppercase}}
+    </div>
+    <div>
+        {{movie.releaseDate | date}}
+    </div>
+</div>
