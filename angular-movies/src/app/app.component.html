@@ -1,11 +1,12 @@
+<app-menu>
+    
+</app-menu>
 <h1>Hello Friend</h1>
 
-<div *ngFor="let movie of movies; let index - index">
-    <div>
-        {{index}}
-        {{movie.title | uppercase}}
-    </div>
-    <div>
-        {{movie.releaseDate | date}}
-    </div>
-</div>
+<h2>In Theaters</h2>
+
+<app-movies-list [list]="moviesInTheaters"></app-movies-list>
+
+<h2>Future Releases</h2>
+
+<app-movies-list [list]="moviesFutureReleases"></app-movies-list>

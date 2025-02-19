@@ -1,0 +1,7 @@
+<ng-container *ngIf="list && list.length > 0">
+    <ng-content select="content">
+
+    </ng-content>
+</ng-container>
+<input type="file" style="display: none;" #upload>
+<button (click)="upload.click()">Attach Document</button>

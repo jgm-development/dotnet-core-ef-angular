@@ -1,1 +1,16 @@
-<p>movies-list works!</p>
+<app-generic-list [list]="movies">
+    <ng-container content>
+        <div *ngFor="let movie of movies; let index = index">
+            <div>
+                {{index}} {{movie.title | uppercase}}
+                <button (click)="remove(index)">Remove</button>
+            </div>
+            <div>
+                {{movie.price | currency}}
+            </div>
+            <div>
+                {{movie.releaseDate | date}}
+            </div>
+        </div>
+    </ng-container>
+</app-generic-list>
