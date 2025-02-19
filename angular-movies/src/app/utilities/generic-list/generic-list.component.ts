@@ -12,7 +12,7 @@ export class GenericListComponent {
   index: any;
   ngOnInit(): void {
   }
-  remove(index: number) {
-    this.list.splice(index, 1);
-  }
+  // remove(index: number) {
+  //   this.list.splice(index, 1);
+  // }
 }
